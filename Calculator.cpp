@@ -15,6 +15,8 @@ double Calculator::Calculate(double x, char op, double y)
 		return x / y;
 	case '^':
 		return pow(x, y);
+	case '%':
+		return (x + y) / 100;
 	default:
 		return 0.0;
 	}
